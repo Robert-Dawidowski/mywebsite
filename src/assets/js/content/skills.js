@@ -90,11 +90,12 @@ class Skills extends Component{
                     <section>
                         <span className={classNames('icon-skills icon-header')}> </span>
                         <h3>My skills</h3>
-                        <p> Egle begle Egle begle Egle begle Egle begle Egle begle Egle begle
-                            Egle begle Egle begle Egle begle Egle begle Egle begle Egle begle Egle begle
-                            Egle begle Egle begle Egle begle Egle begle Egle begle Egle begle Egle begle Egle begle
-                            Egle begle Egle begle Egle begle Egle begle Egle begle
-                            Egle begle Egle begle Egle begle Egle begle Egle begle Egle begle </p>
+                        <p>My main area in which I have experience is front-end development and everything related with this side of web.
+                            In particular, I'm thinking about HTML, CSS and JavaScript.
+                            I'm also developing small and medium single-page web applications (ReactJS), landing pages
+                            creating custom functions, animations and just leyout coding.</p>
+                        <p>If you would like to know more, please check <br/>
+                            my <a href='https://www.linkedin.com/in/robert-dawidowski/' target='_blank' rel="noopener noreferrer">linkedIn</a> profile.</p>
                     </section>
                 </div>
             </div>

@@ -26,7 +26,7 @@ class About extends Component {
           </section>
         </div>
         <div className={classNames('col-md-6')}>
-            <ScrollAnimation animateIn="bounceInRight" animateOut="bounceOutLeft" ref={(node) => { this.node = node; }}>
+            <ScrollAnimation animateIn="bounceInRight"  ref={(node) => { this.node = node; }}>
                     <div className={classNames('mine-img')}> </div>
             </ScrollAnimation>
         </div>

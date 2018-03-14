@@ -2,6 +2,11 @@
     font-family: "Museo Sans";
     src: url('../fonts/MuseoSans.otf') format('otf');
 }
+@font-face {
+    font-family: "Museo Bold";
+    src: url('../fonts/MuseoBold.otf') format('otf');
+}
+
 *,
 *:after,
 *:before {
@@ -14,7 +19,7 @@
 .container {height:2000px;}
 body {padding-top:50px;}
 h2 {font-size: 300%;text-align: center;}
-h3 {font-size: 240%;font-weight: 300;text-transform: uppercase;display: inline-block;}
+h3 {font-size: 240%;font-weight: 300;text-transform: uppercase;display: inline-block;margin-left:5px;}
 #main-page {font-family: "Museo Sans", sans-serif}
 #main-page .menu-wrapper {display: flex;}
 #main-page .logo-img {width: 60px;}
@@ -68,7 +73,8 @@ h3 {font-size: 240%;font-weight: 300;text-transform: uppercase;display: inline-b
 .bounceInRight {-webkit-animation-name: bounceInRight;animation-name: bounceInRight;}
 
 #main-page #about-me {padding: 3rem 0;}
-#main-page #about-me h2:after{display: block;content: " ";height: 2px;width: 12rem;background-color: #337ab7;margin: 15px auto 0 auto;}
+#main-page #about-me h2:after,
+#main-page #skills h2:after{display: block;content: " ";height: 2px;width: 12rem;background-color: #337ab7;margin: 15px auto 0 auto;}
 #main-page .mine-img {-webkit-filter: grayscale(100%);filter: grayscale(100%);background: url("../images/me.jpg"); background-size: cover;
     background-position: center;transition: all 1s;height: 30rem;}
 #main-page .feats-row {overflow: hidden;}
@@ -82,20 +88,25 @@ section p {font-size: 140%;}
     -ms-transform: translateY(-15%) rotate(-10deg);
     -o-transform: translateY(-15%) rotate(-10deg);
     transform: translateY(-15%) rotate(-10deg);}
+#main-page #skills:hover .icon-header {-webkit-transform: translateY(-15%) rotate(-10deg);
+    -moz-transform: translateY(-15%) rotate(-10deg);
+    -ms-transform: translateY(-15%) rotate(-10deg);
+    -o-transform: translateY(-15%) rotate(-10deg);
+    transform: translateY(-15%) rotate(-10deg);}
 
 /*CANVAS*/
 .skills-hart {position: absolute;width: 100%;height: 500px;top: -50px;;margin: auto;z-index: 2;}
 #my-canvas-container {position: relative;height: 100%;width: 100%;}
 #my-canvas {position: absolute;top: 0;left: 0;right: 0;bottom: 0;margin: auto;width: auto;
     height: 100%;}
-#my-canvas ul li a {font-weight: bold;font-size: 30px;}
+#my-canvas ul li a {font-family: "Museo Bold", sans-serif; font-size: 30px;}
 
 
 /*ICONS*/
 #main-page .icon-header {width: 60px; height: 60px; display: inline-block;top: 18px;
     position: relative;transition: all 1s;}
 #main-page .icon-about {background: url("../../assets/images/icons/about.png");}
-
+#main-page .icon-skills {background: url("../../assets/images/icons/about.png") center;}
 
 /*ANIMATIONS */
 

@@ -27,8 +27,8 @@ export default class ScrollAnimation extends Component {
     }
 
     getElementTop() {
-        var yPos = 0;
-        var elm = this.node;
+        let yPos = 0;
+        let elm = this.node;
         while (elm) {
             yPos += (elm.offsetTop + elm.clientTop);
             elm = elm.offsetParent;

@@ -1,5 +1,9 @@
-$(document).ready(function() {
-    if( ! $('#my-canvas').tagcanvas({
+$(function() {
+
+    const $canvas = $('#my-canvas');
+    const $canvasContainer = $('#my-canvas-container');
+
+    if( ! $canvas.tagcanvas({
             textColour : '#367fec',
             maxSpeed : 0.06,
             weight: true,
@@ -13,7 +17,18 @@ $(document).ready(function() {
             initial: [0.3,-0.1],
         })) {
         // TagCanvas failed to load
-        $('#my-canvas-container').hide();
-
+        $canvasContainer.hide();
     }
+    const stopCanvas = function () {
+        $canvas.tagcanvas("pause");
+    }
+    $canvasContainer.hover(function () {
+        $canvas.tagcanvas("resume");
+    });
+
+    $(window).on("scroll", function() {
+        if($('#skills').visible() === true) {
+            setTimeout(stopCanvas, 5000);
+        }
+    });
 });
