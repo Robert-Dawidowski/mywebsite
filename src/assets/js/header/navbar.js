@@ -88,8 +88,8 @@ class NavBar extends Component {
                                     </a>
                                 </li>
                                 <li className={classNames('menu-item')}>
-                                    <a href='#skills' className={classNames('site-nav')}>
-                                        Skills
+                                    <a href='#tools' className={classNames('site-nav')}>
+                                        Tools
                                     </a>
                                 </li>
                                 <li className={classNames('menu-item')}>

@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import '../css/App.css';
 import Top from '../js/header/header';
-import About from '../js/content/about';
-import Skills from "./content/skills";
+import About from './content/about';
 
 class App extends Component {
 
@@ -21,7 +20,6 @@ class App extends Component {
         </div>
         <div className='container'>
           <About getElementOffset={this.getElementOffset}/>
-          <Skills getElementOffset={this.getElementOffset}/>
         </div>
       </div>
     );

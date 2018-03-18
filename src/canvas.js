@@ -19,16 +19,19 @@ $(function() {
         // TagCanvas failed to load
         $canvasContainer.hide();
     }
-    const stopCanvas = function () {
-        $canvas.tagcanvas("pause");
-    }
+
     $canvasContainer.hover(function () {
         $canvas.tagcanvas("resume");
     });
 
+    const stopCanvas = function () {
+        $canvas.tagcanvas("pause");
+    };
     $(window).on("scroll", function() {
         if($('#skills').visible() === true) {
             setTimeout(stopCanvas, 5000);
+        } else {
+            $canvas.tagcanvas("resume");
         }
     });
 });

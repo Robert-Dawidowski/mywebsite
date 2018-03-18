@@ -9,11 +9,10 @@ class Skills extends Component{
     render() {
         return (
             <div className={classNames('row')} id='skills'>
-                <h2>Skills</h2>
-                <div className={classNames('col-md-6')}>
+                <div className={classNames('col-md-6 hidden-xs')}>
                    <div className={classNames('skills-hart')}>
                        <div id='my-canvas-container'>
-                           <canvas id='my-canvas' width={500} height={500}>
+                           <canvas id='my-canvas' width={300} height={300}>
                                <ul>
                                    <li>
                                        <a>HTML 5</a>
@@ -89,11 +88,11 @@ class Skills extends Component{
                 <div className={classNames('col-md-6')}>
                     <section>
                         <span className={classNames('icon-skills icon-header')}> </span>
-                        <h3>My skills</h3>
+                        <h3>What I do</h3>
                         <p>My main area in which I have experience is front-end development and everything related with this side of web.
                             In particular, I'm thinking about HTML, CSS and JavaScript.
-                            I'm also developing small and medium single-page web applications (ReactJS), landing pages
-                            creating custom functions, animations and just leyout coding.</p>
+                            I'm also developing small and medium single-page web applications (ReactJS), landing pages,
+                            creating custom functions, animations and just layout coding.</p>
                         <p>If you would like to know more, please check <br/>
                             my <a href='https://www.linkedin.com/in/robert-dawidowski/' target='_blank' rel="noopener noreferrer">linkedIn</a> profile.</p>
                     </section>
