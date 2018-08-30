@@ -16,7 +16,7 @@ class Facts extends Component {
                     <section>
                         <span className={classNames('icon-facts icon-header')}> </span>
                         <h3>Pure Facts</h3>
-                        <ul className={classNames('fact-list')}>
+                        <ul className={classNames('fact-list')} >
                             <li>
                                 <span className={classNames('main-color')}>Education: </span>
                                 I got my Engineering degree at the Naval Academy in Gdynia. My final work was about artificial intelligence

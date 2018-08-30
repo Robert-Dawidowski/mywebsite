@@ -20,7 +20,6 @@
 body {padding-top:50px;}
 h2 {font-size: 300%;text-align: center;}
 h3 {font-size: 240%;font-weight: 300;text-transform: uppercase;display: inline-block;margin-left:5px;}
-#main-page .main-color {color: #367fec}
 #main-page {font-family: "Museo Sans", sans-serif}
 #main-page .menu-wrapper {display: flex;}
 #main-page .logo-img {width: 60px;}
@@ -73,26 +72,18 @@ h3 {font-size: 240%;font-weight: 300;text-transform: uppercase;display: inline-b
     animation-timing-function: ease;-webkit-animation-timing-function: ease;visibility: visible !important;}
 .bounceInRight {-webkit-animation-name: bounceInRight;animation-name: bounceInRight;}
 
-#main-page #about-me,
-#main-page #skills,
-#main-page #facts{padding: 2rem 0;}
+#main-page #about-me {padding: 3rem 0;}
 #main-page #about-me h2:after,
-#main-page #skills h2:after{display: block;content: " ";height: 2px;width: 12rem;background-color: #337ab7;margin: 15px auto 0 auto;}
-#main-page .mine-img,
-#main-page .mine-hobbies{-webkit-filter: grayscale(100%);filter: grayscale(100%); background-size: cover;
+#main-page #skills h2:after,
+#main-page #experience h2:after {display: block;content: " ";height: 2px;width: 12rem;background-color: #337ab7;margin: 15px auto 0 auto;}
+#main-page .mine-img {-webkit-filter: grayscale(100%);filter: grayscale(100%);background: url("../images/me.jpg"); background-size: cover;
     background-position: center;transition: all 1s;height: 30rem;}
-#main-page .mine-img {background: url("../images/me.jpg") no-repeat center;}
-#main-page .mine-hobbies {background: url("../images/hobbies.jpg") no-repeat center;}
 #main-page .feats-row {overflow: hidden;}
 #about-me h2 {margin-bottom: 3rem;}
-#about-me section,
-#skills section{padding: 0 3rem;}
-#facts section {padding: 3rem; padding-left: 0;}
+#about-me section {padding: 3rem;}
 section p {font-size: 140%;}
-#main-page #about-me .animated,
-#main-page #facts .animated{animation-delay: 1s;}
-#main-page #about-me:hover .mine-img,
-#main-page #facts:hover .mine-hobbies {filter: grayscale(0)}
+#main-page #about-me .animated {animation-delay: 1s;}
+#main-page #about-me:hover .mine-img {filter: grayscale(0)}
 #main-page #about-me:hover .icon-header {-webkit-transform: translateY(-15%) rotate(-10deg);
     -moz-transform: translateY(-15%) rotate(-10deg);
     -ms-transform: translateY(-15%) rotate(-10deg);
@@ -103,27 +94,20 @@ section p {font-size: 140%;}
     -ms-transform: translateY(-15%) rotate(-10deg);
     -o-transform: translateY(-15%) rotate(-10deg);
     transform: translateY(-15%) rotate(-10deg);}
-#main-page #facts:hover .icon-header {-webkit-transform: translateY(-15%) rotate(-10deg);
-    -moz-transform: translateY(-15%) rotate(-10deg);
-    -ms-transform: translateY(-15%) rotate(-10deg);
-    -o-transform: translateY(-15%) rotate(-10deg);
-    transform: translateY(-15%) rotate(-10deg);}
-#main-page .fact-list {padding: 0; font-size: 140%;margin-top: 5px;}
-#main-page .fact-list li {list-style: none;}
 
 /*CANVAS*/
-.skills-hart {position: absolute;width: 100%;height: 350px;top: 30px;margin: auto;z-index: 2;}
+.skills-hart {position: absolute;width: 100%;height: 430px;top: -50px;;margin: auto;z-index: 2;}
 #my-canvas-container {position: relative;height: 100%;width: 100%;}
 #my-canvas {position: absolute;top: 0;left: 0;right: 0;bottom: 0;margin: auto;width: auto;
     height: 100%;}
 #my-canvas ul li a {font-family: "Museo Bold", sans-serif; font-size: 30px;}
+
 
 /*ICONS*/
 #main-page .icon-header {width: 60px; height: 60px; display: inline-block;top: 18px;
     position: relative;transition: all 1s;}
 #main-page .icon-about {background: url("../../assets/images/icons/about.png");}
 #main-page .icon-skills {background: url("../../assets/images/icons/about.png") center;}
-#main-page .icon-facts {background: url("../../assets/images/icons/about.png") bottom;}
 
 /*ANIMATIONS */
 

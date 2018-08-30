@@ -93,7 +93,7 @@ class NavBar extends Component {
                                     </a>
                                 </li>
                                 <li className={classNames('menu-item')}>
-                                    <a href='#expierience' className={classNames('site-nav')}>
+                                    <a href='#experience' className={classNames('site-nav')}>
                                         Experience
                                     </a>
                                 </li>
